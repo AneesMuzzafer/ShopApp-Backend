@@ -20,7 +20,7 @@ router.post("/images", upload.single("image"), async (req, res) => {
 
 
     Image.create(image, (err, done) => {
-        res.send(`http://${ip}:3000/images/${done._id}`);
+        res.send(`https://anees-shop-app.herokuapp.com/images/${done._id}`);
     });
 
 });
